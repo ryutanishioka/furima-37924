@@ -7,10 +7,10 @@
 | email              | string | null: false, unique: true |
 | encrypted_password | string | null: false               |
 | nickname           | string | null: false               |
-| first_name         | text   | null: false               |
-| last_name          | text   | null: false               |
-| first_name_kana    | text   | null: false               |
-| last_name_kana     | text   | null: false               |
+| first_name         | string | null: false               |
+| last_name          | string | null: false               |
+| first_name_kana    | string | null: false               |
+| last_name_kana     | string | null: false               |
 | birth_day          | date   | null: false               |
 
 ### Association
@@ -25,13 +25,13 @@
 | ------------------ | ---------- | ------------------------------ |
 | name               | string     | null: false                    |
 | content            | string     | null: false                    |
-| price              | int        | null: false                    |
+| price              | integer    | null: false                    |
 | user               | references | null: false, foreign_key: true |
-| category_id        | int        | null: false                    |
-| condition_id       | int        | null: false                    |
-| payment_id         | int        | null: false                    |
-| prefecture_id      | int        | null: false                    |
-| days_id            | int        | null: false                    |
+| category_id        | integer    | null: false                    |
+| condition_id       | integer    | null: false                    |
+| payment_id         | integer    | null: false                    |
+| prefecture_id      | integer    | null: false                    |
+| days_id            | integer    | null: false                    |
 
 ### Association
 
@@ -43,7 +43,6 @@
 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
-| price              | int        | null: false                    |
 | user               | references | null: false, foreign_key: true |
 | item               | references | null: false, foreign_key: true |
 
@@ -64,7 +63,7 @@
 | building_name      | string     |                                |
 | phone_number       | string     | null: false                    |
 | order              | references | null: false, foreign_key: true |
-| prefecture_id      | int        | null: false                    |
+| prefecture_id      | integer    | null: false                    |
 
 ### Association
 
