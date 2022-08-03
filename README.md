@@ -24,7 +24,7 @@
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
 | name               | string     | null: false                    |
-| content            | string     | null: false                    |
+| content            | text       | null: false                    |
 | price              | integer    | null: false                    |
 | user               | references | null: false, foreign_key: true |
 | category_id        | integer    | null: false                    |
