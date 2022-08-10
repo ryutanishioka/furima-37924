@@ -31,7 +31,7 @@
 | condition_id       | integer    | null: false                    |
 | payment_id         | integer    | null: false                    |
 | prefecture_id      | integer    | null: false                    |
-| days_id            | integer    | null: false                    |
+| day_id             | integer    | null: false                    |
 
 ### Association
 
