@@ -2,13 +2,13 @@ class Item < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
 
   belongs_to :user
-#Active Hash↓
+  
   belongs_to :category
   belongs_to :condition
   belongs_to :payment
   belongs_to :prefecture
   belongs_to :day
-#Active Storage↓
+
   has_one_attached :image 
 
   validates :image, presence: true
