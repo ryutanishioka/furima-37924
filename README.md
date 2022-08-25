@@ -50,10 +50,10 @@
 
 - belongs_to :user
 - belongs_to :item
-- has_one :send
+- has_one :address
 
 
-## sendsテーブル
+## addressesテーブル
 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
