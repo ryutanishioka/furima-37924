@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :item do
-    name              {Faker::String.random}
+    name              {"商品名"}
     content           {Faker::Lorem.sentence}
     price             {Faker::Number.between(from: 300, to: 9999999)}
     category_id       {Faker::Number.between(from: 2, to: 11)}
