@@ -4,8 +4,6 @@ class OrdersController < ApplicationController
   before_action :redirect_to_root_path, only: :index
 
   def index
-    @item = Item.find(params[:item_id])
-
     @order_address = OrderAddress.new
   end
 
@@ -41,12 +39,8 @@ private
   end
 
   def redirect_to_root_path
-    if @item.user_id == current_user.id
+    if @item.user_id == current_user.id || @item.order.present?
       redirect_to root_path
-    else
-      if @item.order.present?
-        redirect_to root_path
-      end
     end
   end
 
