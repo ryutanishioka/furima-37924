@@ -5,7 +5,7 @@ function price(){
 
   priceInput.addEventListener("keyup", () => {
     const value = priceInput.value
-    const tax = value / 10
+    const tax = Math.trunc(value / 10)
     addTaxPrice.innerHTML = tax
 
     const profit = value - tax
